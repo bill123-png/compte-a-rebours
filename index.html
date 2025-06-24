@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🕑 Compte à rebours analogique</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <h1>🕑 Compte à rebours</h1>
+  <div class="inputs">
+    <input type="number" id="hours" placeholder="Heures" min="0" max="23">
+    <input type="number" id="minutes" placeholder="Minutes" min="0" max="59">
+    <input type="number" id="seconds" placeholder="Secondes" min="0" max="59">
+  </div>
+  <div class="buttons">
+    <button onclick="startCountdown()">Démarrer</button>
+    <button onclick="window.close()">Quitter</button>
+  </div>
+  <div id="time-display">00:00:00</div>
+  <canvas id="clock" width="200" height="200"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>

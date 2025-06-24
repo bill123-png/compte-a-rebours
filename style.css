@@ -1,0 +1,42 @@
+body {
+  background-color: #1e1e1e;
+  color: #39ff14;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.inputs input {
+  width: 60px;
+  margin: 10px;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #555;
+}
+
+#time-display {
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+canvas {
+  background-color: #111;
+  border-radius: 50%;
+}
