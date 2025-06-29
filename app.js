@@ -70,12 +70,15 @@ function startCountdown() {
 
     document.getElementById('time-display').textContent =
       `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-
+    document.getElementById('time-display').style.color = '#39ff14';
     drawClock(60 - seconds);
 
     if (total <= 0) {
       clearInterval(countdownInterval);
       document.getElementById('time-display').textContent = "⏰ Temps écoulé !";
+      document.getElementById('time-display').style.color = 'red';
+      return;
+
     }
     total--;
   }, 1000);
